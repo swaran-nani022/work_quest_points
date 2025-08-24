@@ -1,73 +1,44 @@
-# Welcome to your Lovable project
+Work Quest Points
+Work Quest Points is a secure and modern web application that gamifies professional contributions by rewarding users for completing tasks with a customizable point system. It’s designed as a proof-of-work system to track and incentivize a team’s productivity and engagement in a fun and competitive way.
 
-## Project info
+Key Features
+Role-Based Access: The app distinguishes between Users who submit tasks and Admins who approve them, each with their own dedicated dashboard.
 
-**URL**: https://lovable.dev/projects/f3ab88de-f19c-40d0-a835-2200f52acf60
+Firebase Authentication: Users can securely sign up and log in using their email and password.
 
-## How can I edit this code?
+Live Data: All user profiles and point totals are stored and updated in real time using Google Firestore, a powerful and scalable NoSQL database.
 
-There are several ways of editing your application.
+Intuitive UI: The application is built with React and styled with Tailwind CSS for a clean, responsive, and easy-to-use interface.
 
-**Use Lovable**
+Technologies
+Frontend: React, Tailwind CSS
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f3ab88de-f19c-40d0-a835-2200f52acf60) and start prompting.
+State Management: React Hooks
 
-Changes made via Lovable will be committed automatically to this repo.
+Backend: Firebase Authentication, Google Firestore
 
-**Use your preferred IDE**
+Development: Vite, TypeScript
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Getting Started
+Follow these steps to get a copy of the project up and running on your local machine.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Clone the Repository
 
-Follow these steps:
+Bash
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/swaran-nani022/work_quest_points.git
+Navigate to the Project
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Bash
 
-# Step 3: Install the necessary dependencies.
-npm i
+cd work_quest_points
+Install Dependencies
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Bash
+
+npm install
+Run the App
+
+Bash
+
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f3ab88de-f19c-40d0-a835-2200f52acf60) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
