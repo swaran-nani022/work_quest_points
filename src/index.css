@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Work Quest Points Design System - Modern, Professional, Gamified */
+
+@layer base {
+  :root {
+    /* Base Colors */
+    --background: 240 5% 6%;
+    --foreground: 240 5% 95%;
+
+    /* Card System */
+    --card: 240 4% 9%;
+    --card-foreground: 240 5% 95%;
+
+    /* Popover */
+    --popover: 240 4% 9%;
+    --popover-foreground: 240 5% 95%;
+
+    /* Primary Brand Colors - Professional Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 240 5% 6%;
+    --primary-glow: 217 91% 75%;
+
+    /* Secondary Colors */
+    --secondary: 240 4% 15%;
+    --secondary-foreground: 240 5% 95%;
+
+    /* Muted Colors */
+    --muted: 240 4% 15%;
+    --muted-foreground: 240 5% 65%;
+
+    /* Accent Colors */
+    --accent: 240 4% 15%;
+    --accent-foreground: 240 5% 95%;
+
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 240 5% 95%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 240 5% 6%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 240 5% 95%;
+
+    /* Pending Status */
+    --pending: 240 5% 45%;
+    --pending-foreground: 240 5% 95%;
+
+    /* Points System */
+    --points-glow: 45 93% 58%;
+    --points-bg: 45 93% 15%;
+
+    /* Border & Input */
+    --border: 240 4% 15%;
+    --input: 240 4% 15%;
+    --ring: 217 91% 60%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 75%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 50%));
+    --gradient-card: linear-gradient(135deg, hsl(240 4% 9%), hsl(240 4% 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(240 5% 6%), hsl(240 4% 9%));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 12px -2px hsl(240 5% 3% / 0.3);
+    --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.15);
+    --shadow-success: 0 0 20px hsl(142 76% 36% / 0.15);
+    --shadow-points: 0 0 20px hsl(45 93% 58% / 0.15);
+
+    /* Border Radius */
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+/* Custom Utility Classes */
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-success {
+    background: var(--gradient-success);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-success {
+    box-shadow: var(--shadow-success);
+  }
+  
+  .shadow-points {
+    box-shadow: var(--shadow-points);
+  }
+  
+  .points-glow {
+    color: hsl(var(--points-glow));
+    text-shadow: 0 0 10px hsl(var(--points-glow) / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
